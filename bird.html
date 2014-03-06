@@ -19,14 +19,24 @@
 		position:absolute;
 		height: 40em;
 		width: 45em;
-		background: #DD0042;
 		border-radius: 100% / 120% 100% 95% 85%;
 		-moz-border-radius: 100% / 120% 100% 95% 85%;
 		-webkit-border-radius: 100% / 120% 100% 95% 85%;
 		border: 0.8em solid black;
 	}
 
-	.tail-feather {
+	.bird-body-inner {
+		position:relative;
+		height: 40em;
+		width: 45em;
+		background: #DD0042;
+		border-radius: 100% / 120% 100% 95% 85%;
+		-moz-border-radius: 100% / 120% 100% 95% 85%;
+		-webkit-border-radius: 100% / 120% 100% 95% 85%;
+		z-index: 3
+	}
+
+	.tail {
 		position: absolute;
 		z-index: -1;
 		height: 0;
@@ -64,14 +74,14 @@
 
 	.feather-top {
 		position: absolute;
-		left: 17em;
-		top: -5em;
-		width: 16em;
+		left: 16em;
+		top: -6em;
+		width: 17em;
 		height: 6em;
 		background: #DD0042;
 		border: 0.6em solid black;
 		border-right:0;
-		border-radius: 100% 100% 100% 100% / 80% 70% 50% 100% ;
+		border-radius: 100% 100% 100% 100% / 80% 100% 80% 100% ;
 
 		transform:rotate(40deg);
 		-webkit-transform:rotate(40deg);
@@ -80,8 +90,8 @@
 
 	.feather-bottom {
 		position: absolute;
-		left: 9em;
-		top: -2em;
+		left: 8em;
+		top: -4em;
 		width: 15em;
 		height: 5em;
 		background: #DD0042;
@@ -94,17 +104,33 @@
 		z-index: 1;
 	}
 
+	.belly {
+		position: absolute;
+		left: 9em;
+		top: 27.8em;
+		border: #E5E8D5 1px solid;
+		height: 0;
+		width: 0;
+		border-radius: 100% 100% 100% 100% / 120% 120% 80% 80%;
+		border-bottom-width: 0;
+		border-left-width: 14em;
+		border-right-width: 14em;
+		border-top-width: 13em;
+		z-index: 4
+	}
 	
 	</style>
 </head>
 <body>
 	<div class="container">
-		<div class="tail-feather top"></div>
-		<div class="tail-feather middle"></div>
-		<div class="tail-feather bottom"></div>
+		<div class="tail top"></div>
+		<div class="tail middle"></div>
+		<div class="tail bottom"></div>
 		<div class="feather-top"></div>
 		<div class="feather-bottom"></div>
-		<div class="bird-body"></div>
+		<div class="bird-body"><div class="bird-body-inner"></div></div>
+		
+		<div class="belly"></div>
 	</div>
 </body>
 </html>

@@ -1,0 +1,78 @@
+
+
+
+<html>
+<head>
+	<style>
+
+	body {
+		font-size: 10px;
+	}
+
+	.container {
+		position:relative;
+		left:10em;
+	}	
+
+	.bird-body {
+		position:absolute;
+		height: 40em;
+		width: 45em;
+		background: #DD0042;
+		border-radius: 100% / 120% 100% 95% 85%;
+		border: 0.8em solid black;
+	}
+
+	.tail-feather {
+		position: absolute;
+		z-index: -1;
+		height: 0;
+		width: 0;
+	}
+
+	.top {
+		left: -5em;
+		top: 16.5em;
+		border-top: 2em solid transparent;
+		border-bottom: 2em solid transparent;
+		border-left: 10em solid black;
+		
+		transform:rotate(45deg);
+		-webkit-transform:rotate(45deg);
+	}
+
+	.middle {
+		left: -8em;
+		top: 18em;
+		border-top: 3em solid transparent;
+		border-bottom: 2em solid transparent;
+		border-left: 15em solid black;
+		
+		transform:rotate(12deg);
+		-webkit-transform:rotate(12deg);
+	}
+
+	.bottom {
+		left: -4em;
+		top: 21.2em;
+		border-top: 2em solid transparent;
+		border-bottom: 1em solid transparent;
+		border-left: 7em solid black;
+		
+		transform:rotate(-35deg);
+		-webkit-transform:rotate(-35deg);
+	}
+
+	
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="tail-feather top"></div>
+		<div class="tail-feather middle"></div>
+		<div class="tail-feather bottom"></div>
+		<div class="bird-body">
+		</div>
+	</div>
+</body>
+</html>

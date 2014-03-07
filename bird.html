@@ -119,6 +119,10 @@
 		z-index: 4
 	}
 
+	.face {
+		position: relative;
+	}
+
 	.eye-highlight {
 		position: relative;
 		height: 10em;
@@ -190,10 +194,41 @@
 	.eye-left .eyebrow {
 		transform:rotate(11deg);
 		-webkit-transform:rotate(11deg);
+		-moz-transform:rotate(11deg);
 		top: -1em;
 		left: -3em;
 	}
-	
+
+	.beak{
+		top: 26em;
+		left: 32em;
+		width:  5em;
+		height: 5em;
+		position: relative;
+		background: orange;
+		border-top-right-radius: 50%;
+		border-bottom-left-radius: 200%;
+		border-top-left-radius: 10%;
+		border: 0.2em solid black;
+		z-index: 10;
+	}
+
+
+
+	.beak {
+		transform: rotate(45deg) ;
+		-webkit-transform: rotate(-70deg) skewX(0deg) skewY(20deg) scale(1.4, 2.7) ;
+	}
+/*	.beak:before {
+		transform: rotate(-135deg)  ;
+		-webkit-transform: rotate(-135deg) ;
+	}
+	.beak:after {
+		transform: rotate(135deg) ;
+		-webkit-transform: rotate(135deg);
+	}*/
+
+		
 	</style>
 </head>
 <body>
@@ -206,22 +241,24 @@
 		<div class="bird-body"><div class="bird-body-inner"></div></div>
 		<div class="belly"></div>
 
-		<div class="eye eye-right">
-			<div class="eyebrow"></div>
-			<div class="eye-highlight">
-				<div class="eyeball"></div>
+		<div class="face">
+			<div class="eye eye-right">
+				<div class="eyebrow"></div>
+				<div class="eye-highlight">
+					<div class="eyeball"></div>
+				</div>
 			</div>
-		</div>
-		<div class="eye eye-left">
-			<div class="eyebrow"></div>
-			<div class="eye-highlight">
-				<div class="eyeball"></div>
+			<div class="eye eye-left">
+				<div class="eyebrow"></div>
+				<div class="eye-highlight">
+					<div class="eyeball"></div>
+				</div>
 			</div>
-		</div>
 
-		<div class="beak">
-			<div class="beak-top"></div>
-			<div class="beak-bottom"></div>
+			<div class="beak"><!-- 
+				<div class="beak-top"></div>
+				<div class="beak-bottom"></div> -->
+			</div>
 		</div>
 	</div>
 </body>

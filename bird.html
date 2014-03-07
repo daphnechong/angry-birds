@@ -156,17 +156,17 @@
 		left: 20em;
 	}
 
-	.eye-highlight-left {
+	.eye-left .eye-highlight {
 		position: relative;
 		left: 0.5em;
 	}
 
-	.right-eyeball {
+	.eye-right .eyeball {
 		left: 2em;
 		top: 4em;
 	}
 
-	.left-eyeball {
+	.eye-left .eyeball {
 		left: 6em;
 		top: 4em;
 	}
@@ -180,16 +180,16 @@
 		z-index: 7;
 	}
 
-	.eyebrow-right {
-		transform:rotate(-10deg);
-		-webkit-transform:rotate(-10deg);
+	.eye-right .eyebrow {
+		transform:rotate(-11deg);
+		-webkit-transform:rotate(-11deg);
 		top: -1em;
 		left: -1em;
 	}
 
-	.eyebrow-left {
-		transform:rotate(10deg);
-		-webkit-transform:rotate(10deg);
+	.eye-left .eyebrow {
+		transform:rotate(11deg);
+		-webkit-transform:rotate(11deg);
 		top: -1em;
 		left: -3em;
 	}
@@ -207,16 +207,21 @@
 		<div class="belly"></div>
 
 		<div class="eye eye-right">
-			<div class="eyebrow eyebrow-right"></div>
+			<div class="eyebrow"></div>
 			<div class="eye-highlight">
-				<div class="eyeball right-eyeball"></div>
+				<div class="eyeball"></div>
 			</div>
 		</div>
 		<div class="eye eye-left">
-			<div class="eyebrow eyebrow-left"></div>
-			<div class="eye-highlight eye-highlight-left">
-				<div class="eyeball left-eyeball"></div>
+			<div class="eyebrow"></div>
+			<div class="eye-highlight">
+				<div class="eyeball"></div>
 			</div>
+		</div>
+
+		<div class="beak">
+			<div class="beak-top"></div>
+			<div class="beak-bottom"></div>
 		</div>
 	</div>
 </body>

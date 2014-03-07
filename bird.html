@@ -206,27 +206,40 @@
 		height: 5em;
 		position: relative;
 		background: orange;
-		border-top-right-radius: 50%;
+		border-top-right-radius: 40%;
 		border-bottom-left-radius: 200%;
 		border-top-left-radius: 10%;
 		border: 0.2em solid black;
 		z-index: 10;
 	}
 
-
+	.beak-lower {
+		content:'';
+		top: 20em;
+		left: 31em;
+		width:  6em;
+		height: 7em;
+		position: relative;
+		background: orange;
+		border-top-right-radius: 30%;
+		border-bottom-left-radius: 200%;
+		border-top-left-radius: 10%;
+		border: 0.2em solid black;
+		z-index: 9;
+	}
 
 	.beak {
-		transform: rotate(45deg) ;
-		-webkit-transform: rotate(-70deg) skewX(0deg) skewY(20deg) scale(1.4, 2.7) ;
+		transform: rotate(-70deg) skewX(0deg) skewY(20deg) scale(1.5, 2.7) ;
+		-webkit-transform: rotate(-70deg) skewX(0deg) skewY(20deg) scale(1.5, 2.7) ;
+		-moz-transform: rotate(-70deg) skewX(0deg) skewY(20deg) scale(1.5, 2.7) ;
 	}
-/*	.beak:before {
-		transform: rotate(-135deg)  ;
-		-webkit-transform: rotate(-135deg) ;
+
+	.beak-lower {
+		transform: rotate(120deg) skewX(0deg) skewY(20deg) scale(1.5, 1.5) ;
+		-webkit-transform: rotate(120deg) skewX(0deg) skewY(20deg) scale(1.5, 1.5) ;
+		-moz-transform: rotate(120deg) skewX(0deg) skewY(20deg) scale(1.5, 1.5) ;
+		
 	}
-	.beak:after {
-		transform: rotate(135deg) ;
-		-webkit-transform: rotate(135deg);
-	}*/
 
 		
 	</style>
@@ -255,10 +268,8 @@
 				</div>
 			</div>
 
-			<div class="beak"><!-- 
-				<div class="beak-top"></div>
-				<div class="beak-bottom"></div> -->
-			</div>
+			<div class="beak"></div>
+			<div class="beak-lower"></div>
 		</div>
 	</div>
 </body>

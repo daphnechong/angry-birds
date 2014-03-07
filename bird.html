@@ -118,6 +118,40 @@
 		border-top-width: 13em;
 		z-index: 4
 	}
+
+	.eye-right-highlight {
+		position: relative;
+		height: 10em;
+		width: 10em;
+		background: white;
+		border-radius: 100%;
+		z-index: 6
+	}
+
+	.eye-right {
+		position: absolute;
+		top: 16em;
+		left: 31em;
+		height: 10.7em;
+		width: 10.7em;
+		background: #dddddd;
+		border-radius: 100%;
+		border: 0.5em black solid;
+		z-index: 5
+	}
+
+	.eyeball {
+		position: relative;
+		height: 3em;
+		width: 3em;
+		background: black;
+		border-radius: 100%;
+	}
+
+	.right {
+		left: 2em;
+		top: 4em;
+	}
 	
 	</style>
 </head>
@@ -129,8 +163,14 @@
 		<div class="feather-top"></div>
 		<div class="feather-bottom"></div>
 		<div class="bird-body"><div class="bird-body-inner"></div></div>
-		
 		<div class="belly"></div>
+
+		<div class="eye-right">
+			<div class="eye-right-highlight">
+				<div class="eyeball right"></div>
+			</div>
+		</div>
+		
 	</div>
 </body>
 </html>

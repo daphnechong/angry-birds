@@ -4,6 +4,11 @@ body {
 	font-size: 10px;
 }
 
+.description {
+	font-size: 2em;
+	margin: 20px;
+}
+
 .container {
 	position:relative;
 	left:10em;
